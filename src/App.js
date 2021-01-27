@@ -1,7 +1,7 @@
 import './index.css';
 import React, { Component } from 'react';
-import CatAdoption from './Components/CatAdoption';
-import DogAdoption from './Components/DogAdoption';
+import CatPage from './Components/CatPage';
+import DogPage from './Components/DogPage';
 import Home from './Components/Home';
 import {
   fetchPeople,
@@ -105,7 +105,7 @@ export default class App extends Component {
           <Route
             path='/cat-adopt'
             render={props => (
-              <CatAdoption
+              <CatPage
                 {...props}
                 adoptCat={this.adoptCat}
                 removeCatPerson={this.removeCatPerson}
@@ -118,7 +118,7 @@ export default class App extends Component {
           <Route
             path='/dog-adopt'
             render={props => (
-              <DogAdoption
+              <DogPage
                 {...props}
                 adoptDog={this.adoptDog}
                 removeDogPerson={this.removeDogPerson}
