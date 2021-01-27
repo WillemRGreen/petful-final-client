@@ -134,7 +134,7 @@ export default class DogAdoption extends Component {
     return (
       <div className='adoption'>
         <Link to='/'>
-          <button> Home </button>
+          <button className='button'> Home </button>
         </Link>
         <form className='queue-form' onSubmit={e => this.handleSubmit(e)}>
           <input
@@ -145,7 +145,7 @@ export default class DogAdoption extends Component {
             onChange={e => this.onChange(e)}
             value={this.state.people}
           ></input>
-          <button disabled={this.state.addPersonDisabled} type='submit'>
+          <button className='button' disabled={this.state.addPersonDisabled} type='submit'>
             {' '}
             Submit{' '}
           </button>

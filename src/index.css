@@ -1,5 +1,5 @@
 html {
-  background-color: gray;
+  background-color: #209CEE;
   height: 100%;
   width: 100%;
 }
@@ -30,14 +30,29 @@ html {
   padding: 10px;
 }
 
-.animal {
-  padding: 20px;
-  width: 20%;
-  box-shadow: 0px 0px 5px 2px #17252a;
-  background-color: white;
-}
-
 .animal img {
   width: 60%;
   box-shadow: 0px 0px 5px 2px #17252a;
+}
+
+.button {
+  box-shadow: 3px 4px 0px 0px #172A3A;
+  background:linear-gradient(to bottom, #74B3CE 5%, #508991 100%);
+  background-color:#558F99;
+  border-radius:15px;
+  border:1px solid #508991;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:17px;
+  padding:7px 25px;
+  margin-top: 15px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #5b8a3c;
+  max-width:200px;
+}
+
+.button:hover {
+  box-shadow: 4px 5px 0px 0px #172A3A;
 }
