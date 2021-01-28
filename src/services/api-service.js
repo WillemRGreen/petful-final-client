@@ -53,7 +53,7 @@ export const deleteDogPerson = () => {
   }).then(res => {
     if (!res.ok) {
       throw new Error(
-        `Something went wrong adopting this pet, please try again later`
+        `Something went wrong, please try again later`
       );
     }
   });
@@ -85,7 +85,7 @@ export const deleteCatPerson = () => {
   }).then(res => {
     if (!res.ok) {
       throw new Error(
-        `Something went wrong adopting this pet, please try again later`
+        `Something went wrong, please try again later`
       );
     }
   });
@@ -127,7 +127,7 @@ export const serverAdoptCat = () => {
   }).then(res => {
     if (!res.ok) {
       throw new Error(
-        `Something went wrong adopting this pet, please try again later`
+        `Something went wrong, please try again later`
       );
     }
   });
@@ -142,7 +142,7 @@ export const serverAdoptDog = () => {
   }).then(res => {
     if (!res.ok) {
       throw new Error(
-        `Something went wrong adopting this pet, please try again later`
+        `Something went wrong, please try again later`
       );
     }
   });
