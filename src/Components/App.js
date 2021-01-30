@@ -5,7 +5,7 @@ import AdoptPage from './AdoptPage';
 import { ContextProvider } from '../Context/Context';
 
 
-const Router = () => (
+const App = () => (
     <ContextProvider>
         <BrowserRouter>
             <Switch>
@@ -16,4 +16,4 @@ const Router = () => (
     </ContextProvider>
 );
 
-export default Router;
+export default App;

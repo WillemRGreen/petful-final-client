@@ -50,7 +50,7 @@ export default class PersonQueue extends React.Component {
     startTimer = () => {
         const fakeUsers = ['Joe', 'Jim', 'Jake', 'Keri', 'Steve', 'Conner', 'Jill'];
 
-        this.state.intervalId = setInterval(() => {
+        let newIntervalId = setInterval(() => {
             if (this.context.currentUser === this.props.peopleList[0]) {
                 this.props.setNextUp();
                 return clearInterval(this.state.intervalId);
@@ -72,13 +72,14 @@ export default class PersonQueue extends React.Component {
 
                 // randomly adopt next cat or dog up in Queue
                 let random = Math.floor(Math.random() * 2);
-                if (random % 2 == 0) {
+                if (random % 2 === 0) {
                     this.props.adoptCatNow();
                 } else {
                     this.props.adoptDogNow();
                 };
             };
         }, 5000);
+        this.setState({ intervalId: newIntervalId})
     };
 
     componentWillUnmount() {
