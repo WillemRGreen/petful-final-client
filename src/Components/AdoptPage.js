@@ -159,7 +159,7 @@ export default class AdoptPage extends React.Component {
             return (
                 <div className='adoption-page'>
                     <Header />
-                    <h3>You are in line {this.context.currentUser} !! Please wait....</h3>
+                    <h3>You are in line, {this.context.currentUser}. Thanks for waiting....</h3>
                     <PersonQueue
                         startTimer={this.startTimer}
                         adoptCatNow={this.adoptCatNow}
@@ -181,7 +181,7 @@ export default class AdoptPage extends React.Component {
             return (
                 <div className='adoption-page'>
                     <Header />
-                    <h3>Enter your name to get in line now!</h3>
+                    <h3>Enter your name to get in line!</h3>
                     <PersonQueue
                         startTimer={this.startTimer}
                         adoptCatNow={this.adoptCatNow}
