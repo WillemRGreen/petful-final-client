@@ -90,7 +90,7 @@ export default class PersonQueue extends React.Component {
     render() {
         return (
             <>
-                <div className='person-queue'>
+                <div>
                     <h3>Waiting In Line</h3>
                     <ul>
                         {this.context.people.map((names) => {
@@ -102,9 +102,8 @@ export default class PersonQueue extends React.Component {
                         })}
                     </ul>
 
-                    <form className='add-person-form' onSubmit={this.submitForm}>
+                    <form onSubmit={this.submitForm}>
                         <input
-                            className='name-textbox'
                             type='text'
                             name='name'
                             onChange={e => { this.handleNameChange(e) }}

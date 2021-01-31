@@ -148,7 +148,7 @@ export default class AdoptPage extends React.Component {
             }
             else if (this.state.adopted) {
                 return (
-                    <div className='confirmation-page'>
+                    <div className='confirm-page'>
                         <ConfirmPage
                             petType={this.state.petType} />
                     </div>
